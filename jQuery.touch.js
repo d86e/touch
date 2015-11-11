@@ -1,13 +1,13 @@
 ;(function($){
   $.fn.touch = function(v,fn){
     if(typeof fn == 'function'){
-      var t = $(this),i = 0, x, x1, x2, y1, y2;
+      var t = $(this), i = 0, x, x1, x2, y1, y2;
       t[0].addEventListener('touchstart',s,false);
       t[0].addEventListener('touchmove',m,false);
       function s(e){
-          var e = e || window.event;
-          x1 = e.changedTouches[0].clientX;
-          y1 = e.changedTouches[0].clientY;
+        var e = e || window.event;
+        x1 = e.changedTouches[0].clientX;
+        y1 = e.changedTouches[0].clientY;
       }
       function m(e){
         var e = e || window.event;
