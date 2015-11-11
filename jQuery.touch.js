@@ -19,7 +19,7 @@
           if( 
              ( 
                 Math.abs(y2-y1) < Math.abs(x2-x1)/2 && 
-                (((x2-x1) > 140 && v == "right") || ((x1-x2) >140 && v == "left")) 
+                (((x2-x1) > 140 && v == "right") || ((x1-x2) > 140 && v == "left")) 
              ) ||
              ( 
                 Math.abs(x2-x1) < Math.abs(y2-y1)/2 &&  
