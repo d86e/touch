@@ -18,11 +18,11 @@
         x = setTimeout(function(){
           if( 
              ( 
-                Math.abs(y2-y1)<Math.abs(x2-x1)/2 && 
+                Math.abs(y2-y1) < Math.abs(x2-x1)/2 && 
                 (((x2-x1)>140 && v == "right") || ((x1-x2)>140 && v == "left")) 
              ) ||
              ( 
-                Math.abs(x2-x1)<Math.abs(y2-y1)/2 &&  
+                Math.abs(x2-x1) < Math.abs(y2-y1)/2 &&  
                 (((y2-y1)> 140 && v == "bottom") || ((y1-y2)> 140 && v == "top"))
              )
             )
@@ -32,3 +32,4 @@
     }
   }
   })(jQuery);
+
